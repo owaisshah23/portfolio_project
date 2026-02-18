@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Muhammad Owais  | Classical Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a1a2e;
+            --secondary: #c9a769;
+            --accent: #8b4513;
+            --light: #f5f1e8;
+            --dark: #0d0d15;
+            --text: #333333;
+            --paper: #f9f7f1;
+            --border: #d4b483;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            line-height: 1.7;
+            color: var(--text);
+            background-color: var(--paper);
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23d4b483' fill-opacity='0.08' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: rgba(26, 26, 46, 0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid var(--secondary);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-family: 'Cinzel', serif;
+            font-weight: 700;
+            font-size: 28px;
+            color: var(--light);
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: var(--secondary);
+            font-style: italic;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--light);
+            font-weight: 500;
+            font-size: 18px;
+            transition: all 0.3s;
+            position: relative;
+            font-family: 'Cinzel', serif;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            left: 0;
+            bottom: -5px;
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--light);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 180px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .hero-text {
+            flex: 1;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-text h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 52px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: var(--primary);
+            letter-spacing: 1px;
+        }
+
+        .hero-text h1 span {
+            color: var(--accent);
+            display: block;
+            font-size: 48px;
+            font-weight: 400;
+        }
+
+        .hero-text p {
+            font-size: 22px;
+            color: var(--text);
+            margin-bottom: 30px;
+            max-width: 600px;
+            font-weight: 300;
+        }
+
+        .hero-image {
+            flex: 1;
+            position: relative;
+            z-index: 1;
+        }
+
+        .profile-frame {
+            width: 380px;
+            height: 480px;
+            border: 15px solid var(--secondary);
+            border-radius: 5px;
+            position: relative;
+            box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.2);
+            background-color: var(--light);
+            margin: 0 auto;
+        }
+
+        .profile-picture {
+            width: 100%;
+            height: 100%;
+            background-image: url('WhatsApp Image 2026-01-10 at 11.11.06 AM.jpeg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            top: -0px;
+            left: -0px;
+            filter: sepia(0.2) contrast(1.05);
+        }
+
+        .ornament {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border: 3px solid var(--secondary);
+        }
+
+        .ornament-1 {
+            top: -10px;
+            left: -10px;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .ornament-2 {
+            top: -10px;
+            right: -10px;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        .ornament-3 {
+            bottom: -10px;
+            left: -10px;
+            border-right: none;
+            border-top: none;
+        }
+
+        .ornament-4 {
+            bottom: -10px;
+            right: -10px;
+            border-left: none;
+            border-top: none;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--light);
+            padding: 14px 36px;
+            border-radius: 0;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            border: 2px solid var(--primary);
+            font-family: 'Cinzel', serif;
+            letter-spacing: 1px;
+            font-size: 16px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            color: var(--primary);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary);
+            border-color: var(--secondary);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--secondary);
+            color: var(--primary);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 100px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 70px;
+            position: relative;
+        }
+
+        .section-header h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 42px;
+            color: var(--primary);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 3px;
+            background: var(--secondary);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .section-header p {
+            color: var(--text);
+            max-width: 700px;
+            margin: 25px auto 0;
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        /* About Section */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            background-color: var(--light);
+            padding: 50px;
+            border: 1px solid var(--border);
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+
+        .about-content::before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-left: 3px solid var(--secondary);
+            border-top: 3px solid var(--secondary);
+            top: -10px;
+            left: -10px;
+        }
+
+        .about-content::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-right: 3px solid var(--secondary);
+            border-bottom: 3px solid var(--secondary);
+            bottom: -10px;
+            right: -10px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 32px;
+            margin-bottom: 25px;
+            color: var(--primary);
+        }
+
+        .about-text p {
+            margin-bottom: 25px;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .signature {
+            font-family: 'Cinzel', serif;
+            font-size: 24px;
+            color: var(--accent);
+            margin-top: 30px;
+            text-align: right;
+        }
+
+        .about-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 400px;
+            border: 10px solid var(--secondary);
+            filter: sepia(0.3);
+            box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Skills Section */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .skill-card {
+            background-color: var(--light);
+            padding: 40px 30px;
+            border: 1px solid var(--border);
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-icon {
+            width: 70px;
+            height: 70px;
+            background-color: var(--primary);
+            color: var(--secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+
+        .skill-card h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .skill-card p {
+            color: var(--text);
+            font-size: 17px;
+        }
+
+        /* Portfolio Section */
+        .portfolio-filter {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: none;
+            border: 1px solid var(--border);
+            padding: 12px 28px;
+            font-family: 'Cinzel', serif;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: var(--primary);
+            font-size: 16px;
+        }
+
+        .filter-btn.active {
+            background-color: var(--primary);
+            color: var(--light);
+            border-color: var(--primary);
+        }
+
+        .filter-btn:not(.active):hover {
+            background-color: rgba(201, 167, 105, 0.1);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .portfolio-item {
+            border: 1px solid var(--border);
+            background-color: var(--light);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-15px);
+            box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-img {
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .portfolio-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .portfolio-item:hover .portfolio-img img {
+            transform: scale(1.05);
+        }
+
+        .portfolio-info {
+            padding: 25px;
+            position: relative;
+        }
+
+        .portfolio-info h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .portfolio-info p {
+            color: var(--text);
+            margin-bottom: 20px;
+        }
+
+        .portfolio-tag {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background-color: var(--secondary);
+            color: var(--primary);
+            padding: 5px 15px;
+            font-family: 'Cinzel', serif;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            display: flex;
+            gap: 60px;
+            background-color: var(--light);
+            padding: 50px;
+            border: 1px solid var(--border);
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 35px;
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            color: var(--secondary);
+            font-size: 22px;
+            flex-shrink: 0;
+        }
+
+        .contact-details h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 22px;
+            margin-bottom: 8px;
+            color: var(--primary);
+        }
+
+        .contact-details p {
+            color: var(--text);
+            font-size: 18px;
+        }
+
+        .contact-form {
+            flex: 1;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid var(--border);
+            background-color: transparent;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 18px;
+            color: var(--text);
+            transition: all 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--secondary);
+        }
+
+        .form-group textarea {
+            min-height: 180px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: var(--light);
+            padding: 70px 0 30px;
+            border-top: 3px solid var(--secondary);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .footer-logo {
+            font-family: 'Cinzel', serif;
+            font-weight: 700;
+            font-size: 28px;
+            color: var(--light);
+            letter-spacing: 2px;
+        }
+
+        .footer-logo span {
+            color: var(--secondary);
+            font-style: italic;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .footer-links a {
+            color: var(--light);
+            text-decoration: none;
+            font-family: 'Cinzel', serif;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-links a {
+            width: 45px;
+            height: 45px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light);
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 18px;
+        }
+
+        .social-links a:hover {
+            background-color: var(--secondary);
+            color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 16px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1100px) {
+            .hero-content, .about-content, .contact-container {
+                flex-direction: column;
+            }
+            
+            .hero {
+                padding-top: 150px;
+            }
+            
+            .profile-frame {
+                width: 320px;
+                height: 420px;
+            }
+            
+            .hero-text h1 {
+                font-size: 42px;
+            }
+            
+            .hero-text h1 span {
+                font-size: 38px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--primary);
+                flex-direction: column;
+                padding: 30px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                gap: 25px;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .section-header h2 {
+                font-size: 36px;
+            }
+            
+            .portfolio-grid, .skills-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                gap: 30px;
+                text-align: center;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Syed Muhammad <span>Owais</span></div>
+                <div class="nav-links" id="navLinks">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Expertise</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Syed Muhammad Owais<br><span>Classical Designer & Developer</span></h1>
+                    <p>With over a decade of experience, I create timeless digital experiences that blend classical aesthetics with modern functionality. Each project is crafted with precision, elegance, and attention to detail.</p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Commission a Project</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-frame">
+                        <div class="profile-picture"></div>
+                        <div class="ornament ornament-1"></div>
+                        <div class="ornament ornament-2"></div>
+                        <div class="ornament ornament-3"></div>
+                        <div class="ornament ornament-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>Discover the philosophy and craftsmanship behind my work</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>The Art of Digital Craftsmanship</h3>
+                    <p>My journey in design and development began with a foundation in classical arts and architecture, which I later translated into the digital realm. I believe that great design stands the test of time, much like the classical works that have inspired generations.</p>
+                    <p>With expertise in both visual design and technical implementation, I approach each project as a unique opportunity to create something meaningful. I specialize in creating interfaces that are not only beautiful but also intuitive, accessible, and built to last.</p>
+                    <p>My process involves deep research, meticulous planning, and careful execution. Whether working on a brand identity, a web application, or a complete digital ecosystem, I ensure every detail aligns with the project's vision and the user's needs.</p>
+                    <div class="signature">Syed Muhammad Owais</div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80" alt="Alexander Sterling working">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Areas of Expertise</h2>
+                <p>Mastery across disciplines for comprehensive digital solutions</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Classical Design</h3>
+                    <p>Creating timeless visual identities informed by classical principles of balance, proportion, and harmony. Specializing in typography, color theory, and composition that transcends trends.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>Building elegant, performant websites and applications using modern technologies. Focus on semantic HTML, modular CSS, and clean JavaScript that ensures accessibility and longevity.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <h3>Typography & Lettering</h3>
+                    <p>Expert knowledge of classical and contemporary typefaces, with skill in custom lettering and typographic systems that enhance readability and establish visual hierarchy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Selected Works</h2>
+                <p>A curated collection of projects that embody classical design principles</p>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All Works</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="brand">Brand Identity</button>
+                <button class="filter-btn" data-filter="print">Print & Editorial</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Villa Architecture Website">
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-tag">Web Design</div>
+                        <h3>Villa Architecture</h3>
+                        <p>A responsive website for a classical architecture firm, featuring a custom design system inspired by Renaissance principles.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="brand">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=772&q=80" alt="Orchard Press Branding">
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-tag">Brand Identity</div>
+                        <h3>Orchard Press</h3>
+                        <p>Complete brand identity for a boutique publishing house, including logo, typography, and stationery system.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="print">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Classical Literature Journal">
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-tag">Print & Editorial</div>
+                        <h3>Classical Literature Journal</h3>
+                        <p>Layout and design for a quarterly publication dedicated to classical literature, featuring custom illustrations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Commission a Project</h2>
+                <p>Let's create something timeless together</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Studio Location</h3>
+                            <p>Al Najaf Colony Fsd<br>Mustafa Street No 2</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Address</h3>
+                            <p>j8409854@gmail.com<br>OwaisShah@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telephone</h3>
+                            <p>+92 3039921466<br>Available: Mon-Fri, 9am-6pm CET</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Project Type" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell me about your project vision..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Syed Muhammad<span>Owais</span></div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/awaisshah452?igsh=MWkxN2RnY3BtMGszbQ=="><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Syed Muhammad Owais. All rights reserved. | Classical Design Portfolio</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Portfolio filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+                
+                const filter = btn.getAttribute('data-filter');
+                
+                portfolioItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Contact form submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(contactForm);
+            const name = contactForm.querySelector('input[type="text"]').value;
+            
+            // Show success message
+            alert(`Thank you, ${name}. Your inquiry has been received. I will respond within 2 business days.`);
+            
+            // Reset form
+            contactForm.reset();
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                        mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                    }
+                }
+            });
+        });
+        
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.backgroundColor = 'rgba(26, 26, 46, 0.98)';
+            } else {
+                header.style.backgroundColor = 'rgba(26, 26, 46, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>
